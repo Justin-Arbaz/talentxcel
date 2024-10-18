@@ -1,0 +1,401 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #fff;
+}
+
+:root{
+    --primary-color: #212529;
+    --white-color: #fff; 
+    --secondary-color: #36395A;
+}
+ul{
+    padding: 0;
+}
+ul li{
+    text-decoration: none;
+    list-style-type: none;
+    
+}
+a{
+    text-decoration: none;
+
+}
+
+p{
+    font-size: 17px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-bottom: 17px;
+    /* font-size: 18px; */
+    font-weight: 400;
+    color: #484c74;
+    font-family: serif;
+}
+h3{
+    font-size: 36px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+h2{
+    color: var(--secondary-color);
+    font-size: 42px;
+    font-family: futura;
+    font-weight: 700;
+    line-height: 1.3em;
+}
+h4{
+        font-size: 22px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: var(--secondary-color);
+        font-weight: 700;
+}
+.container-fluid{
+    padding: 0px;
+}
+.navbar{
+    background: #fff;
+    color: #212529;
+    width: 100%;
+}
+ .logo{
+    width: 188px;
+    height: 50px;
+}
+
+                                                         /* Banner section start Here */
+.banner{
+    width: 100%;
+    height: 100vh;
+    /* margin-top: -70px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 50px;
+    background: #f7f7f7;
+}
+.banner .banner-img img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.feature{
+    background-image: url(../images/line-stripes.webp);
+    padding: 80px 0px;
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+    
+}
+.feature .feature-text{
+    font-size: 18px;
+    font-weight: 400;
+    color: #484c74;
+    font-family: serif;
+}
+.vert-move{
+    width: 450px !important;
+    height: auto;
+    object-fit: contain;
+}
+
+img.vert-move {
+    -webkit-animation: mover 1s infinite  alternate;
+    animation: mover 1s infinite  alternate;
+}
+img.vert-move {
+    -webkit-animation: mover 1s infinite  alternate;
+    animation: mover 1s infinite  alternate;
+}
+@-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+
+/* reponsive */
+@media screen and (min-width: 550px) {
+    .square-img{
+        display: none !important;
+    }
+  }
+
+
+/* feature start here */
+
+
+/* achievment section Start Here */
+
+.achievment{
+    background-color: #f7f7f7;
+    padding: 110px 0px;
+}
+.achievment-img{
+    /* width: 100%; */
+    height: 212px;
+    object-fit: contain;
+}
+
+/* Contact form start here */
+
+.contact-form{
+    padding: 80px 0px;
+}
+.contact-bg{
+    height: 780px;
+}
+
+/* responsive */
+@media screen and (max-width: 1200px) {
+   .contact-bg{
+    display: none;
+   }
+  }
+
+/* Footer section start here */
+.footer{
+    background: #f7f7f7;
+    padding-top: 80px;
+    padding-bottom: 20px;
+}
+
+/* Home Page End Here */
+
+/* About us Page Styling */
+
+.aboutus-banner{
+    background: url(../images/two-businessman-discussing-project-meeting.webp), rgba(0, 0, 0, 0.5);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 90px;
+    /* background: rgba(0, 0, 0, 0.5); */
+}
+.banner-h2{
+    font-size: 4em;
+    -webkit-text-stroke: 0.5px black;
+    -webkit-text-fill-color: white;
+    -webkit-animation: fill 0.5s infinite alternate;
+  }
+  .overlay{
+    width: 100%;
+    height: 100%;
+  background-color: rgba(20, 23, 26, 0.7);
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  z-index:999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+
+  .mission{
+    padding: 80px 0px;
+  }
+  .aboutus-rocket img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+  }
+  /* .card:hover{
+    background: red;
+    border-radius: 20px;
+    color: #fff;
+  }
+  .card{
+    padding: 20px 10px;
+  } */
+  
+
+  .company-overview{
+    padding: 80px 0px;
+  }
+
+
+
+  /* service Pages start here */
+
+  .service-banner{
+    background: url(../images/banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .service-banner-h4{
+    font-size: 4em;
+    -webkit-text-stroke: 0.5px black;
+    -webkit-text-fill-color: white;
+    -webkit-animation: fill 0.5s infinite alternate;
+  }
+
+  footer p{
+    display: none;
+  }
+  
+ 
+
+  /* Portfolio Page start Here */
+
+.portfolio-banner{
+    background: url(../images/two-businessman-discussing-project-meeting.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 90px;
+}
+.work{
+    padding: 80px 0px;
+}
+.image-scroll {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    border: 4px solid #333;
+  border-radius: 10px;
+  max-width:100%
+}
+.image-scroll img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    transition: all 3s ease-in-out;
+    max-width:100%
+}
+.image-scroll:hover img {
+    object-position: bottom center;
+}
+/* 
+body {
+  padding: 2rem;  
+} */
+/* .grid-cols {  
+    display: grid;
+      grid-gap: 4em;
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  } */
+
+
+  /* Blog Page design */
+
+  
+.blog-banner{
+    background: url(../images/two-businessman-discussing-project-meeting.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 90px;
+}
+.blog-card .card-title{
+    color: var(--secondary-color);
+}
+
+.blog{
+    width: 100%;
+    height: 550px;
+    background: url(../images/blog-banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+/* Contact Page styling */
+.contact-banner{
+    background: url(../images/two-businessman-discussing-project-meeting.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 90px;
+}
+
+
+@media screen and (max-width: 280px) {
+    
+  }
+
+
+/* Web Design & Development Page styling */
+.webdev-banner{
+    background: url(../images/web-dev.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    margin-top: 70px;
+    display: flex;
+    background-position: center center;
+}
+.webdev-services .web-icon{
+    width: 100%;
+    height: 80px;
+    object-fit: contain;
+}
+.webdev-services .web-card:hover{
+    transform: scale(1.05);
+    transition: 400ms;
+    overflow: hidden;
+}
+
+
+/* Branding and digital strategies pages styling */
+.branding-icon{
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+.branding-banner{
+    padding-top: 120px;
+}
+
+/* Marketing pages style here */
+.marketing-banner{
+    margin-top: 120px;
+    
+}
+.banner-text{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+}
+
+/* ecommerce pages style here */
+.ecommerce-banner{
+    margin-top: 120px;
+}
+
+.ecommerce-icon{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+/* .ecommerce-banner */
